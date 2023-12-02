@@ -7,7 +7,7 @@ root= Tk()
 root.title("Calender")
 root.geometry("240x200")
 root.resizable(0,0)
-
+root.configure(bg="light Grey")
 
 #Function for displaying
 def Show():
@@ -20,8 +20,8 @@ def Show():
     txt.insert(INSERT,cal)
 
 
-lbl1=Label(root,text="Month",font=('arial',9,'bold')).place(x=15,y=0)
-lbl2=Label(root,text="Year",font=('arial',9,'bold')).place(x=115,y=0)
+lbl1=Label(root,text="Month",font=('arial',9,'bold'),bg="light grey").place(x=15,y=0)
+lbl2=Label(root,text="Year",font=('arial',9,'bold'),bg="light grey").place(x=115,y=0)
 
 #creating spinbox
 
